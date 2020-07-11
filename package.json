@@ -1,0 +1,66 @@
+{
+	"name": "yolo",
+	"displayName": "yolo",
+	"description": "One command to push all your broken code straight to master.",
+	"version": "1.0.0",
+	"publisher": "TimoBechtel",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Other",
+		"SCM Providers"
+	],
+	"keywords": [
+		"git",
+		"auto",
+		"commit",
+		"push",
+		"lazy"
+	],
+	"activationEvents": [
+		"onCommand:yolo"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "yolo",
+				"title": "YOLO"
+			}
+		],
+		"menus": {
+			"scm/title": [
+				{
+					"command": "yolo"
+				}
+			]
+		},
+		"configuration": {
+			"title": "YOLO",
+			"properties": {
+				"yolo.pushAfterCommit": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically push to remote repository"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}
