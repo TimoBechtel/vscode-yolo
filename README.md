@@ -1,12 +1,12 @@
 # YOLO - VSCode Extension
 
-One command to push all your broken code straight to master. (or wherever else)
+One command to push all your broken code straight to production.
 
 (`saveAll > stageAll > commit > sync`)
 
 ## Features
 
-Commits all your crappy changes with a random commit from http://whatthecommit.com/ and pushes them automatically using a single command.
+Commits all your ~~crappy~~ _wonderful_ changes with a random commit from http://whatthecommit.com/ and pushes them automatically using a single command.
 
 Also convenient to impress your coworkers with professional looking commit messages.
 
